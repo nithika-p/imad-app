@@ -23,8 +23,17 @@ body {
     
 }
 
+#link a:hover{
+    color:purple;
+}
+
 .container{
     margin: 60px 20px;
     color:black;
     max-width: 800px;
+}
+
+.heading{
+    color: red;
+    text-align:center;
 }
