@@ -23,8 +23,8 @@ body {
     
 }
 
-#link a:hover{
-    color:purple;
+.link a:hover{
+    color:red;
 }
 
 .container{
