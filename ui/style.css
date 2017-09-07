@@ -30,8 +30,10 @@ body {
 .container{
     padding: 40px 40px;
     margin: 60px 20px;
-    color:black;
+    color:white;
+    font-weight: bold;
     max-width: 800px;
+    font-size: 200%;
 }
 
 .heading{
