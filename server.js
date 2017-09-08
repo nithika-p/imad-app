@@ -5,6 +5,52 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var content ={
+    title:'article-1',
+    heading:'introduction',
+    content:`<p>
+                Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+            </p>
+            <br>
+            <p>
+                Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+            </p>
+            <br>
+            <p>
+                Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+            </p>`
+};
+
+function createTemplate(data){
+   var title=data.title;
+   var heading=data.heading;
+   var content=data.content;
+
+     var htmlTemplate=
+         `<html>
+        <head>
+            ${title}
+            <link rel="stylesheet" href="/ui/style.css"/>
+        </head>
+        <body>
+            <a class="link" href="/">home</a>
+            <a class="link" href="/ui/article-two">article 2</a>
+            <a class="link" href="/ui/article-three">article 3</a>
+            <div class="heading">
+                ${heading}
+            </div>
+            <hr/>
+            <div class="container">
+                ${content}
+            </div>
+        </body>
+    </html>`;
+
+     
+ }
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
