@@ -34,7 +34,7 @@ body{
 }
 
 #navigation{
-    background-color: darkgrey;
+    background-color: black;
     padding:10px;
 }
 #navigation li{
@@ -42,6 +42,9 @@ body{
     margin-left:20px;
 }
 
+.link{
+    color:white;
+}
 .link a:hover{
     color:red;
 }
@@ -49,13 +52,13 @@ body{
 .container{
     padding: 40px 40px;
     margin: 60px 20px;
-    color:white;
+    color:black;
     font-weight: bold;
     max-width: 800px;
     font-size: 200%;
 }
 
 .heading{
-    color: red;
+    color: orange;
     text-align:center;
 }
