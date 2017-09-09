@@ -23,6 +23,16 @@ body {
     
 }
 
+#navigation ul{
+    text-align:right;
+    margin:10px;
+}
+
+#navigation li{
+    display:inline-block;
+    margin-left:20px;
+}
+
 .link a:hover{
     color:red;
 }
