@@ -75,7 +75,7 @@ function createTemplate(data){
                     <li><a class="link" href="/ui/article-three">Academics</a></li>
                 </ul>
                 <div class="heading">
-                    <h1>Introduction</h1>
+                    <h1>${heading}</h1>
                 </div>
             </nav>
             <div class="container">
