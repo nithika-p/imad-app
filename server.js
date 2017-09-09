@@ -5,20 +5,55 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone ={
-    title:'article-1',
-    heading:'introduction',
-    content:`<p>
-                Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
-            </p>
-            <br>
-            <p>
-                Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
-            </p>
-            <br>
-            <p>
-                Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
-            </p>`
+var articles={
+
+    'article-one' : {
+        title:'article-1',
+        heading:'Introduction',
+        content:`<p>
+                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                </p>
+                <br>
+                <p>
+                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                </p>
+                <br>
+                <p>
+                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                </p>`
+    },
+    'article-two' : {
+        title:'article-2',
+        heading:'Personal',
+        content:`<p>
+                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                </p>
+                <br>
+                <p>
+                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                </p>
+                <br>
+                <p>
+                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                </p>`
+        
+    },
+    'article-three' : {
+        title:'article-3',
+        heading:'Academics',
+        content:`<p>
+                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                </p>
+                <br>
+                <p>
+                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                </p>
+                <br>
+                <p>
+                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                </p>`
+        
+    }
 };
 
 function createTemplate(data){
@@ -67,8 +102,9 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui/article-one',function(req,res){
-    res.send(createTemplate(articleone));
+app.get('/ui/:articleName',function(req,res){
+    var articleName=req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/article-two',function(req,res){
