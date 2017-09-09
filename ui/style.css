@@ -30,6 +30,7 @@ body {
 
 #navigation{
     background-color: darkgrey;
+    padding:10px;
 }
 #navigation li{
     display:inline-block;
