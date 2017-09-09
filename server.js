@@ -95,13 +95,13 @@ function createTemplate(data){
  }
  
 
-app.get('/hash/:input',funtion(req,res){
+app.get('/hash/:input',funtion (req,res) {
     var hashedString = hash(req.params.input,'this-is-a-random-salt-string');
     res.send(hashedString);
 });
 
 
-app.get('/', function (req, res) {
+app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
