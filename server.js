@@ -43,10 +43,6 @@ function createTemplate(data){
                     <h1>Introduction</h1>
                 </div>
             </nav>
-            <div class="heading">
-                ${heading}
-            </div>
-            <hr/>
             <div class="container">
                 ${content}
             </div>
