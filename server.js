@@ -2,6 +2,16 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var crypto=require('crypto');
+// create a pool-cached database connection
+var Pool=require('pg').Pool;
+
+var config={
+    user:'nithika1011',
+    database:'nithika1011',
+    host:'db.imad.hasura-app.io',
+    port:'5432',
+    password:process.env.DB_PASSWORD
+};
 
 var app = express();
 app.use(morgan('combined'));
@@ -93,6 +103,22 @@ function createTemplate(data){
      var hashed=crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
      return hashed.toString('hex');
  }
+ 
+ var pool= new Pool(config);
+ app.get('/test-db',function(err,res){
+     pool.query('SELCT * FROM test',function(err,result){
+         if (err)
+         {
+             res.status(500).send(err.toString());
+         }
+         else
+         {
+             res.send(JSON.stringify(result.rows));
+         }
+         
+     });
+     
+ });
  
 
 app.get('/hash/:input',function (req,res) {
