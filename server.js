@@ -20,6 +20,9 @@ var articles={
 
     'article-one' : {
         title:'article-1',
+        nav_1: 'HOME',
+        nav_2: 'PERSONAL',
+        nav_3: 'ACADEMICS',
         heading:'Introduction',
         content:`<p>
                     Hello!,I'm Nithika . I reside in Bangalore. 
@@ -28,6 +31,9 @@ var articles={
     },
     'article-two' : {
         title:'article-2',
+        nav_1: 'HOME',
+        nav_2: 'INTRODUCTION',
+        nav_3: 'ACADEMICS',
         heading:'Personal',
         content:`
                 <p>
@@ -39,6 +45,9 @@ var articles={
     },
     'article-three' : {
         title:'article-3',
+        nav_1: 'HOME',
+        nav_2: 'INTRODUCTION',
+        nav_3: 'PERSONAL',
         heading:'Academics',
         content:`<p>
                     I'm doing  B.Tech Computer Science Engineering.
@@ -61,9 +70,9 @@ function createTemplate(data){
         <body>
             <nav id="navigation">
                 <ul>
-                    <li><a class="link" href="/">home</a></li>
-                    <li><a class="link" href="/ui/article-two">Personal</a></li>
-                    <li><a class="link" href="/ui/article-three">Academics</a></li>
+                    <li><a class="link" href="/">${nav_1}</a></li>
+                    <li><a class="link" href="/ui/article-two">${nav_2}</a></li>
+                    <li><a class="link" href="/ui/article-three">${nav_3}</a></li>
                 </ul>
                 <div class="heading">
                     <h1>${heading}</h1>
