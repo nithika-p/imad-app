@@ -25,7 +25,8 @@ body{
 }
 
 .img-medium {
-    padding-top:10px;
+ 
+    height:200px;
     border-radius:50%;
     
 }
