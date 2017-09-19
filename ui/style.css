@@ -40,9 +40,8 @@ body{
     padding:10px;
 }
 #navigation li{
-    border:2px;
-    background-color:white;
-    color:darkgrey;
+    color:red;
+    text-decoration:none;
     display:inline-block;
     margin-left:20px;
 }
