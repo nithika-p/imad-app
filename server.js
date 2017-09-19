@@ -20,9 +20,9 @@ var articles={
 
     'article-one' : {
         title:'article-1',
-        nav_1: 'HOME',
-        nav_2: 'PERSONAL',
-        nav_3: 'ACADEMICS',
+        nav1:'HOME',
+        nav2:'PERSONAL',
+        nav3:'ACADEMICS',
         heading:'Introduction',
         content:`<p>
                     Hello!,I'm Nithika . I reside in Bangalore. 
@@ -31,9 +31,9 @@ var articles={
     },
     'article-two' : {
         title:'article-2',
-        nav_1: 'HOME',
-        nav_2: 'INTRODUCTION',
-        nav_3: 'ACADEMICS',
+        nav1:'HOME',
+        nav2:'INTRODUCTION',
+        nav3:'ACADEMICS',
         heading:'Personal',
         content:`
                 <p>
@@ -45,9 +45,9 @@ var articles={
     },
     'article-three' : {
         title:'article-3',
-        nav_1: 'HOME',
-        nav_2: 'INTRODUCTION',
-        nav_3: 'PERSONAL',
+        nav1:'HOME',
+        nav2:'INTRODUCTION',
+        nav3:'PERSONAL',
         heading:'Academics',
         content:`<p>
                     I'm doing  B.Tech Computer Science Engineering.
@@ -60,6 +60,9 @@ function createTemplate(data){
    var title=data.title;
    var heading=data.heading;
    var content=data.content;
+   var nav1=data.nav1;
+   var nav2=data.nav2;
+   var nav3=data.nav3;
 
      var htmlTemplate=
          `<html>
@@ -70,9 +73,9 @@ function createTemplate(data){
         <body>
             <nav id="navigation">
                 <ul>
-                    <li><a class="link" href="/">${nav_1}</a></li>
-                    <li><a class="link" href="/ui/article-two">${nav_2}</a></li>
-                    <li><a class="link" href="/ui/article-three">${nav_3}</a></li>
+                    <li><a class="link" href="/">${nav1}</a></li>
+                    <li><a class="link" href="/ui/article-two">${nav2}</a></li>
+                    <li><a class="link" href="/ui/article-three">${nav3}</a></li>
                 </ul>
                 <div class="heading">
                     <h1>${heading}</h1>
