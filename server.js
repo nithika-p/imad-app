@@ -136,6 +136,14 @@ app.get('/ui/:articleName',function(req,res){
     res.send(createTemplate(articles[articleName]));
 });
 
+app.get('/flippingCards',function(req,res){
+    res.sendFile(path.join(__dirname,'flipping_cards.html'));
+});
+
+app.get('/style_cards.css',function(req,res){
+    res.sendFile(path.join(__dirname,'style_cards.css'));
+});
+
 
 
 
