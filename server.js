@@ -22,30 +22,18 @@ var articles={
         title:'article-1',
         heading:'Introduction',
         content:`<p>
-                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                    Hello!,I'm Nithika . I reside in Bangalore. 
                 </p>
-                <br>
-                <p>
-                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
-                </p>
-                <br>
-                <p>
-                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
-                </p>`
+                <br>`
     },
     'article-two' : {
         title:'article-2',
         heading:'Personal',
-        content:`<p>
-                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
-                </p>
-                <br>
+        content:`
                 <p>
-                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
-                </p>
-                <br>
-                <p>
-                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                     I love to learn new stuff.
+                     I like to dance and paint.
+                     I love playing basket ball.
                 </p>`
         
     },
@@ -53,17 +41,9 @@ var articles={
         title:'article-3',
         heading:'Academics',
         content:`<p>
-                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
+                    I'm doing  B.Tech Computer Science Engineering.
                 </p>
-                <br>
-                <p>
-                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
-                </p>
-                <br>
-                <p>
-                    Hello!,I'm Nithika . I reside in Bangalore. I'm doing  B.Tech Computer Science Engineering. I love to learn new technology.
-                </p>`
-        
+                <br>`
     }
 };
 
