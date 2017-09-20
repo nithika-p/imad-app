@@ -121,7 +121,7 @@ app.get('/hash/:input',function (req,res) {
 var counter=0;
 app.get('/counter',function(req,res){
  counter=counter+1;
- res.send(`Yo! This page has been visited ${counter} number of times.`)
+ res.send(`Yo! This page has been visited ${counter} times.`)
 })
 
 
