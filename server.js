@@ -118,6 +118,12 @@ app.get('/hash/:input',function (req,res) {
     res.send(hashedString);
 });
 
+var counter=0;
+app.get('/counter',function(req,res){
+ counter=counter+1;
+ res.send(`Yo! This page has been visited ${counter} number of times.`)
+})
+
 
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
