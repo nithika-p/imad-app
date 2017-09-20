@@ -24,8 +24,7 @@ var articles={
         nav2:'PERSONAL',
         nav3:'ACADEMICS',
         heading:'Introduction',
-        content:`<p>
-                    Hello!,I'm Nithika . I reside in Bangalore. 
+        content:`<p> Hello! my name is Nithika.<br>I like to paint with pixels and sthoughts in 140 characters or less.<br>I keep up with technology and laugh at funny stuff.<br>Why dont you read my articles ( links on top right corner of webpage).
                 </p>
                 <br>`
     },
