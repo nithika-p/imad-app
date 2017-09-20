@@ -12,12 +12,12 @@ body {
 }
 
 body{
-    margin:0px;
+    margin:0 auto;
 }
 
 
 .text-big {
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .bold {
