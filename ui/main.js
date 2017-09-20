@@ -7,8 +7,15 @@ element.innerHTML=`Hello! my name is Nithika.<br>I like to paint with pixels and
 var img=document.getElementById("madi");
 var marginLeft= 0;
 var moveRight = function(){
-    marginLeft = marginLeft + 1;
-    img.style.marginLeft = marginLeft + 'px';
+    if(marginLeft==50)
+    {
+      marginLeft=0;
+    }
+    else
+    {
+        marginLeft = marginLeft + 1;
+        img.style.marginLeft = marginLeft + 'px';
+    }
 };
 
 img.onclick=function(){
