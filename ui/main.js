@@ -7,17 +7,17 @@ element.innerHTML=`Hello! my name is Nithika.<br>I like to paint with pixels and
 var img=document.getElementById("madi");
 var marginLeft= 0;
 var moveRight = function(){
-    if(marginLeft==50)
+    if(marginLeft==600)
     {
       marginLeft=0;
     }
     else
     {
-        marginLeft = marginLeft + 1;
+        marginLeft = marginLeft + 2;
         img.style.marginLeft = marginLeft + 'px';
     }
 };
 
 img.onclick=function(){
-    var interval=setInterval(moveRight,100);
+    var interval=setInterval(moveRight,200);
 };
