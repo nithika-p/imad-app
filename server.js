@@ -24,8 +24,11 @@ var articles={
         nav2:'PERSONAL',
         nav3:'ACADEMICS',
         heading:'Introduction',
-        content:`<p> Hello! my name is Nithika.<br>I like to paint with pixels and sthoughts in 140 characters or less.<br>I keep up with technology and laugh at funny stuff.<br>Why dont you read my articles ( links on top right corner of webpage).
-                </p>
+        content:`<p> Hello! my name is Nithika.
+                 <br>Read my articles to know about me!( links on top right corner of webpage).
+                 </p>
+                 <br>
+                 This button <button id="button">Click me</button>has been clicked <span id="count">0</span> times.
                 <br>`
     },
     'article-two' : {
