@@ -24,7 +24,8 @@ var articles={
         nav2:'PERSONAL',
         nav3:'ACADEMICS',
         heading:'Introduction',
-        content:`<p> Hello! my name is Nithika.
+        content:`<script src="ui/main.js"></script>
+                 <p> Hello! my name is Nithika.
                  <br>Read my articles to know about me!( links on top right corner of webpage).
                  </p>
                  <br>
