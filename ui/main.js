@@ -32,10 +32,11 @@ button.onclick=function(){
             {
                 var counter=request.responseText;
                 var span=document.getElementById('count');
-                span.innerHTML=counter.toString();
+                span.innerHTML=counter;
             }
         }
     };
+    
     request.open('GET','http://nithika1011.imad.hasura-app.io/counter',true);
     request.send(null);
 };
