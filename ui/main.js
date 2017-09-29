@@ -11,10 +11,11 @@ var moveRight = function(){
         img.style.marginLeft = marginLeft + 'px';
     }
 };
-
-img.onclick=function(){
-    var interval=setInterval(moveRight,200);
+if(img){
+    img.onclick=function(){
+        var interval=setInterval(moveRight,200);
 };
+}
 
 var button=document.getElementById('counter');
 button.onclick=function(){
