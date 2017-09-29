@@ -111,6 +111,7 @@ function createTemplate(data){
      return hashed.toString('hex');
  }
  
+ var names=[];
  app.get('/submit-name', function(req, res){
   
   var name=req.query.name;
