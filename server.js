@@ -197,15 +197,12 @@ app.get('/ui/IMG_20141028_013412.JPG', function (req, res) {
 app.get('/ui/articles/:articleName',function(req,res){
     
     pool.query("SELECT * FROM article WHERE title= $1", [req.params.articleName] , functiom(err,result){
-        
         if(err){
             res.status(500).send(err.toString());
         }
         else{
             if(resut.rows.length===0)
-                {
-                    res.status(404).send(err.toString());}
-            
+                {res.status(404).send(err.toString());}
             else{
             var articleData=JSON.stringify(result.rows[0]);
             res.send(createTemplate(articleData));
