@@ -35,7 +35,7 @@ var articles={
                  Enter your comments:
                  <br/>
                  <input type=text id="name" placeholder="Enter your comments"></input><br/>
-                 <input type="submit value="submit"></input>
+                 <input type=submit value="submit"></input>
                  <br>
                  Comments received previously</br>
                  <ul>
