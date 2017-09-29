@@ -54,7 +54,18 @@ var articles={
                      I love to learn new stuff.
                      I like to dance and paint.
                      I love playing basket ball.
-                </p>`
+                </p>
+                <div id="comments">
+                <br/>
+                 Enter your comments:
+                 <br/>
+                 <input type=text id="name" placeholder="Enter your comments"></input><br/>
+                 <input type=submit value="submit" id="sub_btn"></input>
+                 <br>
+                 Comments received previously</br>
+                 <ul id="nameList">
+                 </ul>
+                 </div>`
         
     },
     'article-three' : {
@@ -66,7 +77,18 @@ var articles={
         content:`<p>
                     I'm doing  B.Tech Computer Science Engineering.
                 </p>
-                <br>`
+                <br/>
+                <div id="comments">
+                 Enter your comments:
+                 <br/>
+                 <input type=text id="name" placeholder="Enter your comments"></input><br/>
+                 <input type=submit value="submit" id="sub_btn"></input>
+                 <br>
+                 Comments received previously</br>
+                 <ul id="nameList">
+                 </ul>
+                 </div>
+                `
     }
 };
 
