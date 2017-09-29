@@ -111,6 +111,14 @@ function createTemplate(data){
      return hashed.toString('hex');
  }
  
+ app.get('/submit-name', function(req, res){
+  
+  var name=req.query.name;
+  names.push(name);
+  res.send(JSON.stringify(names));
+});
+
+ 
  var pool= new Pool(config);
  app.get('/test-db',function(err,res){
      pool.query('SELECT * FROM test',function(err,result){
@@ -142,13 +150,6 @@ app.get('/counter',function(req,res){
 
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
-app.get('/submit-name', function(req, res){
-  
-  var name=req.query.name;
-  names.push(name);
-  res.send(JSON.stringify(names));
 });
 
 app.get('/ui/main.js', function(req, res){
