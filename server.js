@@ -32,7 +32,6 @@ var articles={
                  <div class=footer>
                  This button <button id="counter">Click me</button>has been clicked <span id="count">0</span> times.
                  </div>
-                 <script src="main.js"></script>
                 `
     },
     'article-two' : {
@@ -90,6 +89,7 @@ function createTemplate(data){
             <div class="container">
                 ${content}
             </div>
+            <script src="main.js"></script>
         </body>
     </html>`;
     
