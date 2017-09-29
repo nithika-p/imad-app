@@ -89,7 +89,7 @@ function createTemplate(data){
             <div class="container">
                 ${content}
             </div>
-            <script src="main.js"></script>
+            <script src="article.js"></script>
         </body>
     </html>`;
     
