@@ -39,9 +39,6 @@ var articles={
                  <br>
                  Comments received previously</br>
                  <ul id="nameList">
-                 <li>comment 1</li>
-                 <li>comment 2</li>
-                 <li>comment 3</li>
                  </ul>
                  </div>
                 `
