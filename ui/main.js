@@ -1,4 +1,4 @@
-var img=document.getElementById("madi");
+var img=document.getElementById('madi');
 var marginLeft= 0;
 var moveRight = function(){
     if(marginLeft==600)
