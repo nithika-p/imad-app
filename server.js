@@ -30,7 +30,6 @@ var articles={
                  </p>
                  <br/>
                  <div class=footer>
-                 <style text-align="center">
                  This button <button id="counter">Click me</button>has been clicked <span id="count">0</span> times.
                  <br/>
                  Enter your comments:
