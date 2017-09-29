@@ -31,6 +31,18 @@ var articles={
                  <br/>
                  <div class=footer>
                  This button <button id="counter">Click me</button>has been clicked <span id="count">0</span> times.
+                 <br/>
+                 Enter your comments:
+                 <br/>
+                 <input type=text id="name" placeholder="Enter your comments"></input><br/>
+                 <input type="submit value="submit"></input>
+                 <br>
+                 Comments received previously</br>
+                 <ul>
+                 <li>comment 1</li>
+                 <li>comment 2</li>
+                 <li>comment 3</li>
+                 </ul>
                  </div>
                 `
     },
