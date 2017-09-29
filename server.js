@@ -29,7 +29,9 @@ var articles={
                  <br>Read my articles to know about me!( links on top right corner of webpage).
                  </p>
                  <br>
+                 <div class=footer>
                  This button <button id="counter">Click me</button>has been clicked <span id="count">0</span> times.
+                 </div>
                  <script src=ui/main.js></script>
                 <br>`
     },
